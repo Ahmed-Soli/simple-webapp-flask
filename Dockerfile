@@ -1,8 +1,5 @@
 FROM ubuntu:16.04
 RUN which apt
-RUN which apt-get
-RUN which yum
-RUN which apk
 RUN apt update && apt install -y python python-pip
 RUN pip install flask
 COPY app.py /opt/
